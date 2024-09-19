@@ -4,30 +4,27 @@ const cron = require('node-cron');
 const port = process.env.PORT || 7860;     
 const moment = require('moment-timezone');
 
-// 添加24小时访问的URL数组
+// 24h
 const urls = [
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  // 添加更多24小时不间断访问的URL
+  'https://www.baidu.com',             // 
+  'https://www.yahoo.com',             // 
+  'https://www.baidu.com',             // 
+  'https://www.yahoo.com',             // 
+
+  // 
 ];
 
-// 添加在01:00至05:00暂停访问，其他时间正常访问的URL数组
+// 01:00-05:00
 function visitWebsites() {
   const websites = [
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com'         // 此处可备注名称，例如：Back4app，最后一个url后面没有逗号
-    //添加更多的指定时间访问的URL
+    'https://www.google.com',        // 
+    'https://www.google.com',        // 
+    'https://www.google.com',        // 
+    'https://www.google.com'         // 
+    //
   ];
 
- // 遍历网页数组并发送请求
+ // 
   websites.forEach(async (url) => {
     try {
       const response = await axios.get(url);
@@ -38,7 +35,7 @@ function visitWebsites() {
   });
 }
 
-// 检查并设置定时器
+// 
 function checkAndSetTimer() {
   const currentMoment = moment().tz('Asia/Hong_Kong');
   const formattedTime = currentMoment.format('YYYY-MM-DD HH:mm:ss');
