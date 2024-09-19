@@ -8,14 +8,20 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy"
   },
   "dependencies": {
     "axios": "^1.6.2",
     "node-cron": "^2.0.1",
-    "moment-timezone": "latest"
+    "moment-timezone": "latest",
+    "@edgio/core": "^7.0.0",
+    "@edgio/nodejs-connector": "^7.0.0"
   },
-  "engines": {
-    "node": ">=14"
+  "devDependencies": {
+    "@edgio/cli": "^7.0.0",
+    "@edgio/devtools": "^7.0.0"
   }
 }
