@@ -8,9 +8,9 @@ export ARGO_DOMAIN=${ARGO_DOMAIN:-''}
 export WEB_DOMAIN=${WEB_DOMAIN:-'example.com'}
 export ARGO_AUTH=${ARGO_AUTH:-''}
 export WSPATH=${WSPATH:-'argo'}
-export UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-export CFIP=${CFIP:-'www.888dyy.cc'}
-export NAME=${NAME:-''}
+export UUID=${UUID:-'fa4c23ef-42d8-4efc-a80a-b1b0bb55a6c1'}
+export CFIP=${CFIP:-'linux.do'}
+export NAME=${NAME:-'edgio'}
 export SERVER_PORT="${SERVER_PORT:-${PORT:-3000}}"
 
 z="
